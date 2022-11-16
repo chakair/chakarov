@@ -169,13 +169,10 @@
     </head>
     <body class="vscode-body vscode-light">
         <hr>
-<h2 id="id-n6rqupy85w23qsf8timdaxqtitle-network-modelsdesc-updated-1668116461975created-1667510310726">id: n6rqupy85w23qsf8timdaxq
-title: Network Models
-desc: ''
-updated: 1668116461975
-created: 1667510310726</h2>
+
+<link href="style.css" rel="stylesheet"></link> 
 <h1 id="network-models">Network Models</h1>
-<h4 id="table-of-contents">Table of Contents</h4>
+<h2 id="table-of-contents">Table of Contents</h2>
 <ul>
 <li><a href="#osi-model">OSI Model</a>
 <ul>
@@ -187,15 +184,16 @@ created: 1667510310726</h2>
 </li>
 </ul>
 </li>
-<li><a href="#tcpip-modeltcp-ip">TCP/IP Model</a>
+<li><a href="#tcpip-model">TCP/IP Model</a>
 <ul>
 <li><a href="#layer-1-to-4-acronym">Layer 1 to 4 Acronym</a></li>
 </ul>
 </li>
-<li><a href="#protocol-data-units-pduspdus">Protocol Data Units (PDUs)</a></li>
-<li><a href="#transport-layer-layer-4-protocolstransport-layer-protocols">Transport Layer (layer 4) Protocols</a></li>
-<li><a href="#ip-header-protocol-identifiersip-header-identifiers">IP Header Protocol Identifiers</a></li>
+<li><a href="#protocol-data-units-pdus">Protocol Data Units (PDUs)</a></li>
+<li><a href="#transport-layer-layer-4-protocols">Transport Layer (layer 4) Protocols</a></li>
+<li><a href="#ip-header-protocol-identifiers">IP Header Protocol Identifiers</a></li>
 </ul>
+<br>
 <h2 id="osi-model">OSI Model</h2>
 <table>
 <thead>
@@ -211,7 +209,7 @@ created: 1667510310726</h2>
 <td>7.</td>
 <td>Application</td>
 <td>FTP <br> HTTP <br> SMTP</td>
-<td></td>
+<td>File Transfer Protocol <br> Hyper Text Transfer Protocol <br> Simple Mail Transfer Protocol</td>
 </tr>
 <tr>
 <td>6.</td>
@@ -235,7 +233,7 @@ created: 1667510310726</h2>
 <td>3.</td>
 <td>Network</td>
 <td>IP <br> ICMP <br></td>
-<td></td>
+<td>Internet Protocol <br> Internet Control Message Protocol</td>
 </tr>
 <tr>
 <td>2.</td>
@@ -247,13 +245,17 @@ created: 1667510310726</h2>
 <td>1.</td>
 <td>Physical</td>
 <td>Ethernet <br> USB</td>
-<td></td>
+<td>transport data using electrical, mechanical or procedural interfaces</td>
 </tr>
 </tbody>
 </table>
 <br>
-<h3 id="osi-model-acronyms">OSI Model Acronyms</h3>
-<h4 id="layer-7-to-1-acronym">Layer 7 to 1 Acronym</h4>
+<ul>
+<li><a href="#table-of-contents">Back to Table of Contents</a></li>
+</ul>
+<br>
+<h2 id="osi-model-acronyms">OSI Model Acronyms</h2>
+<h3 id="layer-7-to-1-acronym">Layer 7 to 1 Acronym</h3>
 <br>
 <figure>
     <img src="https://chakair.github.io/chakarov/assets/images/data_processing_mini.jpg"
@@ -275,7 +277,7 @@ created: 1667510310726</h2>
 <tr>
 <td>7.</td>
 <td>Application</td>
-<td>All</td>
+<td>All ⬇️</td>
 </tr>
 <tr>
 <td>6.</td>
@@ -310,8 +312,11 @@ created: 1667510310726</h2>
 </tbody>
 </table>
 <br>
+<ul>
+<li><a href="#table-of-contents">Back to Table of Contents</a></li>
+</ul>
 <br>
-<h4 id="layer-1-to-7-acronym">Layer 1 to 7 Acronym</h4>
+<h3 id="layer-1-to-7-acronym">Layer 1 to 7 Acronym</h3>
 <br>
 <figure>
     <img src="https://chakair.github.io/chakarov/assets/images/sausage_pizza.jpg"
@@ -320,7 +325,6 @@ created: 1667510310726</h2>
 <p><strong>P</strong>lease <strong>D</strong>o <strong>N</strong>ot <strong>T</strong>hrow <strong>S</strong>ausage <strong>P</strong>izza <strong>A</strong>way
 </figcaption></p>
 </figure>
-<br>
 <br>
 <table>
 <thead>
@@ -332,29 +336,9 @@ created: 1667510310726</h2>
 </thead>
 <tbody>
 <tr>
-<td>1.</td>
-<td>Physical</td>
-<td>Please</td>
-</tr>
-<tr>
-<td>2.</td>
-<td>Data Link</td>
-<td>Do</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>Network</td>
-<td>Not</td>
-</tr>
-<tr>
-<td>4.</td>
-<td>Transport</td>
-<td>Throw</td>
-</tr>
-<tr>
-<td>5.</td>
-<td>Session</td>
-<td>Sausage</td>
+<td>7.</td>
+<td>Application</td>
+<td>Away</td>
 </tr>
 <tr>
 <td>6.</td>
@@ -362,14 +346,38 @@ created: 1667510310726</h2>
 <td>Pizza</td>
 </tr>
 <tr>
-<td>7.</td>
-<td>Application</td>
-<td>Away</td>
+<td>5.</td>
+<td>Session</td>
+<td>Sausage</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Transport</td>
+<td>Throw</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Network</td>
+<td>Not</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Data Link</td>
+<td>Do</td>
+</tr>
+<tr>
+<td>1.</td>
+<td>Physical</td>
+<td>Please ⬆️</td>
 </tr>
 </tbody>
 </table>
 <br>
-<h2 id="tcpip-modeltcp-ip">TCP/IP Model{#tcp-ip}</h2>
+<ul>
+<li><a href="#table-of-contents">Back to Table of Contents</a></li>
+</ul>
+<br>
+<h2 id="tcpip-model">TCP/IP Model</h2>
 <table>
 <thead>
 <tr>
@@ -397,16 +405,56 @@ created: 1667510310726</h2>
 </tbody>
 </table>
 <br>
-<h4 id="layer-1-to-4-acronym">Layer 1 to 4 Acronym</h4>
+<ul>
+<li><a href="#table-of-contents">Back to Table of Contents</a></li>
+</ul>
 <br>
+<h3 id="layer-1-to-4-acronym">Layer 1 to 4 Acronym</h3>
+<br>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Layer Name</th>
+<th>Acronym</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.</td>
+<td>Application</td>
+<td>A ⬇️</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Transport</td>
+<td>t</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Internet</td>
+<td>i</td>
+</tr>
+<tr>
+<td>1.</td>
+<td>Network Interface</td>
+<td>n</td>
+</tr>
+</tbody>
+</table>
 <figure>
     <img src="https://chakair.github.io/chakarov/assets/images/beans.jpg"
          alt="A tin of baked beans">
     <figcaption>
-<p><strong>A</strong>    <strong>T</strong> <strong>i</strong> <strong>n</strong> of beans
+<p><strong>A</strong>    <strong>t</strong> <strong>i</strong> <strong>n</strong> of beans
 </figcaption></p>
 </figure>
-<h2 id="protocol-data-units-pduspdus">Protocol Data Units (PDUs)</h2>
+<br>
+<ul>
+<li><a href="#table-of-contents">Back to Table of Contents</a></li>
+</ul>
+<br>
+<h2 id="protocol-data-units-pdus">Protocol Data Units (PDUs)</h2>
 <table>
 <thead>
 <tr>
@@ -441,7 +489,12 @@ created: 1667510310726</h2>
 <p><strong>S</strong>ome <strong>P</strong>eople <strong>F</strong>ear <strong>B</strong>irthdays
 </figcaption></p>
 </figure>
-<h2 id="transport-layer-layer-4-protocolstransport-layer-protocols">Transport Layer (layer 4) Protocols</h2>
+<br>
+<ul>
+<li><a href="#table-of-contents">Back to Table of Contents</a></li>
+</ul>
+<br>
+<h2 id="transport-layer-layer-4-protocols">Transport Layer (layer 4) Protocols</h2>
 <table>
 <thead>
 <tr>
@@ -488,7 +541,11 @@ created: 1667510310726</h2>
 <p>⚠️ In voice and video communications efficiency and non-delay is key at the sacrifice of reliability!</p>
 </blockquote>
 <br>
-<h2 id="ip-header-protocol-identifiersip-header-identifiers">IP Header Protocol Identifiers</h2>
+<ul>
+<li><a href="#table-of-contents">Back to Table of Contents</a></li>
+</ul>
+<br>
+<h2 id="ip-header-protocol-identifiers">IP Header Protocol Identifiers</h2>
 <table>
 <thead>
 <tr>
